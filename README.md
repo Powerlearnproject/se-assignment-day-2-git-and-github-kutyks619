@@ -180,7 +180,7 @@ Example: git flow init
 Trunk-Based Development: Commit frequently on the main branch with short-lived branches.
 
 Example: git checkout main then git merge feature-branch
-2. Rebase vs. Merge 🎭
+2. Rebase vs. Merge 
 
 Merge: Creates a merge commit to combine branches.
 
@@ -191,7 +191,7 @@ Rebase: Rewrites commit history into a linear form.
 
 Example: git checkout feature-branch && git rebase main
 Note: Great for local branches, avoid on shared branches.
-3. Interactive Rebase 🎨
+3. Interactive Rebase 
 Reordering & Squashing Commits:
 
 git rebase -i HEAD~3
@@ -206,7 +206,7 @@ Code: pick, squash, and edit in the rebase editor.
 Apply a Specific Commit to Another Branch:
 Use git cherry-pick <commit-hash> on main to bring in specific changes without the entire branch.
 Pro Tip: Useful for “hotfixes” without merging the whole branch!
-5. Git Tags and Releases 🎉
+5. Git Tags and Releases 
 Tagging Commits: Perfect for marking versions.
 Annotated Tag: git tag -a v1.0 -m "Version 1.0 release"
 Lightweight Tag: Just git tag v1.0 and done!
@@ -214,7 +214,7 @@ Lightweight Tag: Just git tag v1.0 and done!
 Oops? Fix Your Last Commit!:
 git commit --amend to modify or add to your latest commit.
 Heads-up: Only amend local commits, not shared ones!
-7. GitHub Actions for Workflow Automation 🛠️
+7. GitHub Actions for Workflow Automation 
 
 Example Workflow: Automate test runs on each push.
 
